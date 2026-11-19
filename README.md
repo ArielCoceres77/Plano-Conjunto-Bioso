@@ -1,16 +1,11 @@
 # Lente Plano · Revisá tu lámina (Conjunto Biosol)
 
-Realidad aumentada para revisar una lámina de dibujo técnico **mientras se dibuja**: compara en vivo la hoja del alumno con el Plano N.º 1 «Conjunto Biosol» (escala 1:10).
-
-- En **verde**, lo que ya está dibujado en su lugar; en **rojo**, lo que falta o está corrido (tolerancia ≈ 0,8 mm).
-- Con la mira se ve qué pieza es, sus medidas y cuánto le falta.
-- Progreso por vista.
+Realidad aumentada para revisar una lámina de dibujo técnico **mientras se dibuja**, sin pegar nada sobre la hoja. Compara la lámina del alumno con el Plano N.º 1 «Conjunto Biosol» (escala 1:10).
 
 ## Cómo funciona
-La hoja se ubica con **11 marcadores ArUco** pegados (8 en los márgenes y 3 en huecos vacíos del plano), así sigue funcionando aunque el dibujo cambie y con trazos de lápiz suaves. Se calibra una sola vez llevando 4 puntos a 4 esquinas del dibujo.
+- **Seguimiento por los 4 bordes del papel**: la hoja se apoya sobre una superficie más oscura y la cámara la reconoce en vivo.
+- **Calibración una sola vez por lámina**: foto enderezada + 4 puntos en 4 esquinas del dibujo (con zoom y el plano de referencia superpuesto).
+- **Revisar**: foto en alta resolución y comparación trazo por trazo: verde = bien, rojo = falta o corrido (tolerancia ≈ 0,8 mm). Progreso por vista y por pieza; con la mira se ven las medidas.
+- Zoom con dos dedos o con ＋/− para mirar cada pieza de cerca sin perder la hoja.
 
-## Archivos
-- `index.html`: la app (un solo archivo, sin dependencias externas).
-- `marcadores.png`: hoja A4 con los 11 marcadores para imprimir al 100 %.
-
-Publicado en https://arielcoceres77.github.io/Plano-Conjunto-Bioso/
+`index.html` es la app completa (un solo archivo, sin dependencias externas). Publicado en https://arielcoceres77.github.io/Plano-Conjunto-Bioso/
